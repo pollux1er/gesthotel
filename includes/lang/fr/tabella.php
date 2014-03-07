@@ -2,19 +2,19 @@
 
 switch ($messaggio) {
 
-case "situazione alle":  						$messaggio = "Situation à"; break;
-case "del":  									$messaggio = "le"; break;
-case "Tabella prenotazioni del":  				$messaggio = "Réservations de"; break;
-case "ERRORE":  								$messaggio = "Erreur"; break;
-case "Torna al menù principale":  				$messaggio = "Retour au menu principal"; break;
-case "Visualizza la tabella per la stampa":  	$messaggio = "Voir le mois pour impression"; break;
-case "Visualizza la tabella con i giorni":  	$messaggio = "Voir le mois journalier"; break;
-case "documento di tipo":  			$messaggio = "Type de document"; break;
-case "visualizza":  				$messaggio = "voir"; break;
-case "Prenotazione non confermata":  		$messaggio = "Réservation non confirmée"; break;
-case "Prenotazione confermata, caparra non pagata":	$messaggio = "Réservation confirmée, arrhes non payées"; break;
-case "Caparra pagata":  			$messaggio = "Arrhes payées"; break;
-case "Tutto pagato":  				$messaggio = "Tout est payé"; break;
+case "situazione alle":  			$messaggio = "situation à"; break;
+case "del":  					$messaggio = "de"; break;
+case "Tabella prenotazioni del":  		$messaggio = "table de réservations de"; break;
+case "ERRORE":  				$messaggio = "ERREURR"; break;
+case "Torna al menù principale":  		$messaggio = "retour au menu principal"; break;
+case "Visualizza la tabella per la stampa":  	$messaggio = "vue la table pour imprimer"; break;
+case "Visualizza la tabella con i giorni":  	$messaggio = "vue la table avec des jours"; break;
+case "documento di tipo":  			$messaggio = "type de document"; break;
+case "visualizza":  				$messaggio = "vue"; break;
+case "Prenotazione non confermata":  		$messaggio = "réservation non confirmée"; break;
+case "Prenotazione confermata, caparra non pagata":	$messaggio = "réservation confirmée, déposent non payé"; break;
+case "Caparra pagata":  			$messaggio = "dépôt payé"; break;
+case "Tutto pagato":  				$messaggio = "tout payé"; break;
 case "":  		$messaggio = ""; break;
 case "":  		$messaggio = ""; break;
 

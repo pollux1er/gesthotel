@@ -2,6 +2,8 @@
 
 $lista_citta = "";
 $cod_citta = "";
+$cod2_citta = "";
+$cod3_citta = "";
 $cod_regione_citta = "";
 
 #$lista_citta[0] = "London";

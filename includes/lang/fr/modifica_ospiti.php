@@ -2,9 +2,6 @@
 
 switch ($messaggio) {
 
-case "il":  					$messaggio = "the"; break;
-case " a":  					$messaggio = " in"; break;
-case "ln.":  					$messaggio = "ln."; break;
 case "Modifica gli ospiti della prenotazione":	$messaggio = "Modify guests of reservation"; break;
 case "Cliente titolare":  			$messaggio = "Titular client"; break;
 case "Ospite della prenotazione":  		$messaggio = "Guest of reservation"; break;
@@ -28,6 +25,8 @@ case "Gli ospiti della prenotazione":  		$messaggio = "The guests of reservation
 case "sono stati modificati":  			$messaggio = "have been modified"; break;
 case "nato":  					$messaggio = "born"; break;
 case "nata":  					$messaggio = "born"; break;
+case "il":  					$messaggio = "the"; break;
+case " a":  					$messaggio = " in"; break;
 case "scade":  					$messaggio = "expires"; break;
 case "cittadinanza":  				$messaggio = "nationality"; break;
 case "città di nascita":  			$messaggio = "city of birth"; break;
@@ -47,6 +46,7 @@ case "Partita iva":  				$messaggio = "VAT number"; break;
 case "Modifica gli ospiti delle prenotazioni":	$messaggio = "Modify guests of reservations"; break;
 case "della prenotazione":  			$messaggio = "of reservation"; break;
 case "Gli ospiti delle prenotazioni":  		$messaggio = "The guests of reservations"; break;
+case "ln.":  					$messaggio = "ln."; break;
 case "":  		$messaggio = ""; break;
 case "":  		$messaggio = ""; break;
 

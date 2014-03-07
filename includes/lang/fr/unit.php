@@ -20,7 +20,7 @@ $trad_var['room_gender'] = 'm';
 $trad_var['apartment'] = 'apartment';
 $trad_var['apartments'] = 'apartments';
 $trad_var['apartment_gender'] = 'm';
-$trad_var['special_characters'] = 'a,e,i,o,u';
+$trad_var['special_characters'] = 'a,e,i,o,ha,he,hi,ho';
 
 
 
@@ -32,8 +32,6 @@ switch ($messaggio) {
 
 
 # Translations for rental units with MASCULINE name (or no gender) that begins with SPECIAL characters
-case "al":  						$messaggio = "to"; break;
-case " in":  						$messaggio = " in"; break;
 case "APPARTAMENTI":  					$messaggio = "[UNITS]"; break;
 case "Inserisci ora i dati sugli appartamenti":		$messaggio = "Insert now the data about [units]"; break;
 case "almeno il numero, diverso per ogni appartamento":	$messaggio = "at least the number, different for each [unit]"; break;
@@ -45,6 +43,7 @@ case "Non ci sono appartamenti con le caratteristiche richieste":	$messaggio = "
 case "Non c'è nessun appartamento tra quelli richiesti che possa ospitare":	$messaggio = "There are no [units] between the requested ones that can accomodate"; break;
 case "Nel periodo selezionato non è possibile ospitare il cliente in un appartamento tra quelli richiesti":	$messaggio = "In the selected period is not possible to accomodate the client in an [unit] between the requested ones"; break;
 case "verrà spostata dall'appartamento":  		$messaggio = "will be moved from [unit]"; break;
+case "al":  						$messaggio = "to"; break;
 case "La nuova prenotazione verrà inserita nell'appartamento":	$messaggio = "The new reservation will be inserted in the [unit]"; break;
 case "Se si continua l'assegnazione dell'appartamento <span class=\"colred\">non terrà conto degli appartamenti richiesti</span>":	$messaggio = "If you continue the [unit] assignment <span class=\"colred\">will not respect the requested [units]</span>"; break;
 case "Non ci sono":  					$messaggio = "There are not"; break;
@@ -96,6 +95,7 @@ case "Non c'è nessun appartamento che possa ospitare":	$messaggio = "There are 
 case "Non c'è nessun appartamento da":  		$messaggio = "There are no [units] for"; break;
 case " in un appartamento da <b>almeno":  		$messaggio = " in an [unit] for <b>at least"; break;
 case " in un appartamento da":  			$messaggio = " in an [unit] for"; break;
+case " in":  						$messaggio = " in"; break;
 case "appartamenti da":  				$messaggio = "[units] for"; break;
 case " in un appartamento della <b>tariffa selezionata</b>":	$messaggio = " in an [unit] of the <b>selected rate</b>"; break;
 case "appartamenti delle <b>tariffe selezionate</b>":	$messaggio = "[units] of the <b>selected rates</b>"; break;
@@ -233,8 +233,6 @@ switch ($messaggio) {
 
 
 # Translations for rental units with MASCULINE name (or no gender) that begins with NORMAL characters
-case "al":  						$messaggio = "to"; break;
-case " in":  						$messaggio = " in"; break;
 case "APPARTAMENTI":  					$messaggio = "[UNITS]"; break;
 case "Inserisci ora i dati sugli appartamenti":		$messaggio = "Insert now the data about [units]"; break;
 case "almeno il numero, diverso per ogni appartamento":	$messaggio = "at least the number, different for each [unit]"; break;
@@ -246,6 +244,7 @@ case "Non ci sono appartamenti con le caratteristiche richieste":	$messaggio = "
 case "Non c'è nessun appartamento tra quelli richiesti che possa ospitare":	$messaggio = "There are no [units] between the requested ones that can accomodate"; break;
 case "Nel periodo selezionato non è possibile ospitare il cliente in un appartamento tra quelli richiesti":	$messaggio = "In the selected period is not possible to accomodate the client in a [unit] between the requested ones"; break;
 case "verrà spostata dall'appartamento":  		$messaggio = "will be moved from [unit]"; break;
+case "al":  						$messaggio = "to"; break;
 case "La nuova prenotazione verrà inserita nell'appartamento":	$messaggio = "The new reservation will be inserted in the [unit]"; break;
 case "Se si continua l'assegnazione dell'appartamento <span class=\"colred\">non terrà conto degli appartamenti richiesti</span>":	$messaggio = "If you continue the [unit] assignment <span class=\"colred\">will not respect the requested [units]</span>"; break;
 case "Non ci sono":  					$messaggio = "There are not"; break;
@@ -297,6 +296,7 @@ case "Non c'è nessun appartamento che possa ospitare":	$messaggio = "There are 
 case "Non c'è nessun appartamento da":  		$messaggio = "There are no [units] for"; break;
 case " in un appartamento da <b>almeno":  		$messaggio = " in a [unit] for <b>at least"; break;
 case " in un appartamento da":  			$messaggio = " in a [unit] for"; break;
+case " in":  						$messaggio = " in"; break;
 case "appartamenti da":  				$messaggio = "[units] for"; break;
 case " in un appartamento della <b>tariffa selezionata</b>":	$messaggio = " in a [unit] of the <b>selected rate</b>"; break;
 case "appartamenti delle <b>tariffe selezionate</b>":	$messaggio = "[units] of the <b>selected rates</b>"; break;
@@ -436,8 +436,6 @@ switch ($messaggio) {
 
 
 # Translations for rental units with FEMENINE name that begins with SPECIAL characters
-case "al":  						$messaggio = "to"; break;
-case " in":  						$messaggio = " in"; break;
 case "APPARTAMENTI":  					$messaggio = "[UNITS]"; break;
 case "Inserisci ora i dati sugli appartamenti":		$messaggio = "Insert now the data about [units]"; break;
 case "almeno il numero, diverso per ogni appartamento":	$messaggio = "at least the number, different for each [unit]"; break;
@@ -449,6 +447,7 @@ case "Non ci sono appartamenti con le caratteristiche richieste":	$messaggio = "
 case "Non c'è nessun appartamento tra quelli richiesti che possa ospitare":	$messaggio = "There are no [units] between the requested ones that can accomodate"; break;
 case "Nel periodo selezionato non è possibile ospitare il cliente in un appartamento tra quelli richiesti":	$messaggio = "In the selected period is not possible to accomodate the client in an [unit] between the requested ones"; break;
 case "verrà spostata dall'appartamento":  		$messaggio = "will be moved from [unit]"; break;
+case "al":  						$messaggio = "to"; break;
 case "La nuova prenotazione verrà inserita nell'appartamento":	$messaggio = "The new reservation will be inserted in the [unit]"; break;
 case "Se si continua l'assegnazione dell'appartamento <span class=\"colred\">non terrà conto degli appartamenti richiesti</span>":	$messaggio = "If you continue the [unit] assignment <span class=\"colred\">will not respect the requested [units]</span>"; break;
 case "Non ci sono":  					$messaggio = "There are not"; break;
@@ -500,6 +499,7 @@ case "Non c'è nessun appartamento che possa ospitare":	$messaggio = "There are 
 case "Non c'è nessun appartamento da":  		$messaggio = "There are no [units] for"; break;
 case " in un appartamento da <b>almeno":  		$messaggio = " in an [unit] for <b>at least"; break;
 case " in un appartamento da":  			$messaggio = " in an [unit] for"; break;
+case " in":  						$messaggio = " in"; break;
 case "appartamenti da":  				$messaggio = "[units] for"; break;
 case " in un appartamento della <b>tariffa selezionata</b>":	$messaggio = " in an [unit] of the <b>selected rate</b>"; break;
 case "appartamenti delle <b>tariffe selezionate</b>":	$messaggio = "[units] of the <b>selected rates</b>"; break;
@@ -637,8 +637,6 @@ switch ($messaggio) {
 
 
 # Translations for rental units with FEMENINE name that begins with NORMAL characters
-case "al":  						$messaggio = "to"; break;
-case " in":  						$messaggio = " in"; break;
 case "APPARTAMENTI":  					$messaggio = "[UNITS]"; break;
 case "Inserisci ora i dati sugli appartamenti":		$messaggio = "Insert now the data about [units]"; break;
 case "almeno il numero, diverso per ogni appartamento":	$messaggio = "at least the number, different for each [unit]"; break;
@@ -650,6 +648,7 @@ case "Non ci sono appartamenti con le caratteristiche richieste":	$messaggio = "
 case "Non c'è nessun appartamento tra quelli richiesti che possa ospitare":	$messaggio = "There are no [units] between the requested ones that can accomodate"; break;
 case "Nel periodo selezionato non è possibile ospitare il cliente in un appartamento tra quelli richiesti":	$messaggio = "In the selected period is not possible to accomodate the client in a [unit] between the requested ones"; break;
 case "verrà spostata dall'appartamento":  		$messaggio = "will be moved from [unit]"; break;
+case "al":  						$messaggio = "to"; break;
 case "La nuova prenotazione verrà inserita nell'appartamento":	$messaggio = "The new reservation will be inserted in the [unit]"; break;
 case "Se si continua l'assegnazione dell'appartamento <span class=\"colred\">non terrà conto degli appartamenti richiesti</span>":	$messaggio = "If you continue the [unit] assignment <span class=\"colred\">will not respect the requested [units]</span>"; break;
 case "Non ci sono":  					$messaggio = "There are not"; break;
@@ -701,6 +700,7 @@ case "Non c'è nessun appartamento che possa ospitare":	$messaggio = "There are 
 case "Non c'è nessun appartamento da":  		$messaggio = "There are no [units] for"; break;
 case " in un appartamento da <b>almeno":  		$messaggio = " in a [unit] for <b>at least"; break;
 case " in un appartamento da":  			$messaggio = " in a [unit] for"; break;
+case " in":  						$messaggio = " in"; break;
 case "appartamenti da":  				$messaggio = "[units] for"; break;
 case " in un appartamento della <b>tariffa selezionata</b>":	$messaggio = " in a [unit] of the <b>selected rate</b>"; break;
 case "appartamenti delle <b>tariffe selezionate</b>":	$messaggio = "[units] of the <b>selected rates</b>"; break;

@@ -2,6 +2,8 @@
 
 $lista_regioni = "";
 $cod_regioni = "";
+$cod2_regioni = "";
+$cod3_regioni = "";
 $cod_nazione_regioni = "";
 
 #$lista_regioni[0] = "Scotland";

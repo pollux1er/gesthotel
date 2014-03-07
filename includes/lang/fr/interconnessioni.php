@@ -2,25 +2,25 @@
 
 switch ($messaggio) {
 
-case "Aggiornamento eseguito con successo":  	$messaggio = "Mis à jour réussie"; break;
-case "OK":  									$messaggio = "OK"; break;
-case "Continua":  								$messaggio = "Continuez"; break;
-case "Subordinazione creata":  					$messaggio = "Subordination créée"; break;
-case "Impossibile effettuare il collegamento, controllare i dati immessi":	$messaggio = "Impossible d'effectuer la connexion, contrôler les données insérées"; break;
-case "Subordinazione cancellata":  				$messaggio = "Subordination supprmée"; break;
-case "Torna indietro":  						$messaggio = "Retournez"; break;
-case "Cancella":  								$messaggio = "Supprimez"; break;
-case "Con la subordinazione non si potranno inserire nuovi dati o apportare modifiche, ma solo importare i dati dall'installazione principale":	$messaggio = "Avec le subortdination vous ne pourrez pas insérer de nouvelles données ou appliquer des modifications, mais seulement aux données d'importation à partir de l'installation principale"; break;
-case "Password":  								$messaggio = "Mot de passe"; break;
-case "Commento da aggiungere al titolo di questa installazione":	$messaggio = "Commentez pour être ajouté au titre de cette installation"; break;
-case "Crea la subordinazione":  				$messaggio = "Créez la subordination"; break;
-case "Usa compressione":  			$messaggio = "Utiliser la compression"; break;
+case "Aggiornamento eseguito con successo":  	$messaggio = "Updated successfully"; break;
 case "Non si è potuto portare a termine l'<div style=\"display: inline; color: red;\">aggiornamento</div>":	$messaggio = "<div style=\"display: inline; color: red;\">Update</div> failed"; break;
+case "OK":  					$messaggio = "OK"; break;
 case "<div style=\"display: inline; color: red;\"><b>ATTENZIONE</b></div>: premendo su <b>\"<i>Continua</i>\"</b> tutti i dati del <i>database attuale</i> verranno <b>cancellati</b>":	$messaggio = "<div style=\"display: inline; color: red;\"><b>WARNING</b></div>: if you press <b>\"<i>Continue</i>\"</b> all data from <i>current database</i> will be <b>deleted</b>"; break;
+case "Continua":  				$messaggio = "Continue"; break;
+case "Subordinazione creata":  			$messaggio = "Subordination created"; break;
+case "Impossibile effettuare il collegamento, controllare i dati immessi":	$messaggio = "Connection refused, check inserted data"; break;
+case "Subordinazione cancellata":  		$messaggio = "Subordination deleted"; break;
+case "Torna indietro":  			$messaggio = "Go back"; break;
 case "Interconnessioni con sorgenti esterne di dati":	$messaggio = "Interconnections with external data sources"; break;
+case "Cancella":  				$messaggio = "Delete"; break;
 case "la subordinazione":  			$messaggio = "subordination"; break;
 case "Subordinazione ad un'altra installazione di hoteldruid":	$messaggio = "Subordination to another installation of hoteldruid"; break;
+case "Con la subordinazione non si potranno inserire nuovi dati o apportare modifiche, ma solo importare i dati dall'installazione principale":	$messaggio = "With subortdination you won't be able to insert new data or apply modifications, but only to import data from the master installation"; break;
 case "Subordina questa installazione di hoteldruid a quella che si trova all'indirizzo":	$messaggio = "Subordinate this installation of hoteldruid to the one that is at"; break;
+case "Password":  				$messaggio = "Password"; break;
+case "Commento da aggiungere al titolo di questa installazione":	$messaggio = "Comment to be added to the title of this installation"; break;
+case "Crea la subordinazione":  		$messaggio = "Create subordination"; break;
+case "Usa compressione":  			$messaggio = "Use compression"; break;
 case "Utente per l'aggiornamento remoto delle interconnessioni":	$messaggio = "User to remotely update interconnections"; break;
 case "Utente per l'aggiornamento remoto modificato":	$messaggio = "User for remote updates modified"; break;
 case "Modifica":  				$messaggio = "Modify"; break;

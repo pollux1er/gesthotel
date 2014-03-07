@@ -2,17 +2,15 @@
 
 switch ($messaggio) {
 
-case "Torna indietro":  			$messaggio = "Retournez"; break;
-case "Salva le modifiche":  			$messaggio = "Sauvez les modifications"; break;
-case "Aggiungi":  				$messaggio = "Add"; break;
-case "OPPURE":  				$messaggio = "OR"; break;
-case "in":  					$messaggio = "in"; break;
+case "Torna indietro":  			$messaggio = "Go back"; break;
 case "documento":  				$messaggio = "document"; break;
 case "Modifica il documento":  			$messaggio = "Edit document"; break;
+case "Salva le modifiche":  			$messaggio = "Save changes"; break;
 case "Visualizza il documento":  		$messaggio = "View document"; break;
 case "Documento salvato":  			$messaggio = "Document saved"; break;
 case "Variabili":  				$messaggio = "Variables"; break;
 case "Limiti":  				$messaggio = "Limits of"; break;
+case "Aggiungi":  				$messaggio = "Add"; break;
 case "Cambia":  				$messaggio = "Change"; break;
 case "Formato del documento":  			$messaggio = "Document format"; break;
 case "EMAIL":  					$messaggio = "EMAIL"; break;
@@ -43,6 +41,7 @@ case "parte sotto condizione":  		$messaggio = "part under condition"; break;
 case "nome_variabile":  			$messaggio = "variable_name"; break;
 case "valore":  				$messaggio = "value"; break;
 case "SOSTITUISCI CON PARTE DA MOSTRARE SOLO SE E' SODDISFATTA LA CONDIZIONE PRECEDENTE":	$messaggio = "REPLACE WITH PART TO BE SHOWN ONLY IF PREVIOUS CONDITION IS SATISFIED"; break;
+case "OPPURE":  				$messaggio = "OR"; break;
 case "Variabili personalizzate e condizioni del documento":	$messaggio = "Custom variables and conditions of document"; break;
 case "Condividi il numero progressivo con":  	$messaggio = "Share progressive number with"; break;
 case "il documento":  				$messaggio = "document"; break;
@@ -60,6 +59,7 @@ case "alla registrazione dell'uscita":  	$messaggio = "at check-out"; break;
 case "Il documento verrà salvato automaticamente":	$messaggio = "The document will be saved automatically"; break;
 case "Il documento non verrà salvato automaticamente":	$messaggio = "The document will not be saved automatically"; break;
 case "multi-lingua":  				$messaggio = "multi-language"; break;
+case "in":  					$messaggio = "in"; break;
 case "Avviso":  				$messaggio = "Warning"; break;
 case "nei documenti in formato multi-lingua non è possibile ripetere una sola parte con i tag [r] e [/r], il documento viene ripetuto interamente per ogni prenotazione":	$messaggio = "with multi-language format it's not possible to repeat only one part under the tags [r] and [/r], the document is repeated entirely for each reservation"; break;
 case "predefinito":  				$messaggio = "default"; break;
