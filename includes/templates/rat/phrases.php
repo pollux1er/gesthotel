@@ -26,14 +26,14 @@ function mext_rat ($messaggio,$pag,$lingua="") {
 if ($lingua) $lingua_mex = $lingua;
 else global $lingua_mex;
 
-if ($lingua_mex != "en" and $lingua_mex != "ita" and $lingua_mex != "es") {
+if ($lingua_mex != "en" and $lingua_mex != "ita" and $lingua_mex != "es" and $lingua_mex != "fr") {
 if (@is_file("./includes/lang/$lingua_mex/modt_rat.php")) include("./includes/lang/$lingua_mex/modt_rat.php");
 } # fine if ($lingua_mex != "en" and...
 
 if ($tr != 1) {
 
 # messaggi in inglese di default
-if ($lingua_mex != "es" and $lingua_mex != "ita") {
+if ($lingua_mex != "es" and $lingua_mex != "ita" and $lingua_mex != "fr") {
 switch ($messaggio) {
 case "Pagina della tabella con le tariffe":	$messaggio = "Page of the rates table"; $tr = 1; break;
 case "Crea la pagina con la tabella delle tariffe":	$messaggio = "Create the rates table page"; $tr = 1; break;
@@ -73,6 +73,12 @@ case "var_fr_":  			$messaggio = "var_phr_"; $tr = 1; break;
 case "var_fr_":  			$messaggio = "var_phr_"; $tr = 1; break;
 } # fine switch ($messaggio)
 } # fine if ($lingua_mex != "es" and $lingua_mex != "ita")
+
+if ($lingua_mex == "fr") {
+switch ($messaggio) {
+
+} # fine switch ($messaggio)
+} # fine if ($lingua_mex == "fr")
 
 if ($lingua_mex == "es") {
 switch ($messaggio) {

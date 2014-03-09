@@ -616,7 +616,7 @@ else $cost_percorso_a_dati = "./";
 if ($template_file_name[$lingua_modello]) $nome_file = $template_file_name[$lingua_modello];
 else {
 $template_file_name_m = mext_cal($template_file_name['ita'],$pag);
-if ($template_file_name_m != $template_file_name['ita'] and $template_file_name_m != $template_file_name['en'] and $template_file_name_m != $template_file_name['es']) $nome_file = $template_file_name_m;
+if ($template_file_name_m != $template_file_name['ita'] and $template_file_name_m != $template_file_name['en'] and $template_file_name_m != $template_file_name['es'] and $template_file_name_m != $template_file_name['fr']) $nome_file = $template_file_name_m;
 else $nome_file = $lingua_modello."_".$template_file_name['en'];
 } # fine else if ($template_file_name[$lingua_modello])
 $file = @fopen("$percorso_cartella_modello/$nome_file","w+");

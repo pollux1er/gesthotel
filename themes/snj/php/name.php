@@ -24,6 +24,7 @@
 $theme_name["en"] = "simple without javascript";
 $theme_name["ita"] = "semplice senza javascript";
 $theme_name["es"] = "simple sin javascript";
+$theme_name["fr"] = "simple sin javascript";
 
 
 

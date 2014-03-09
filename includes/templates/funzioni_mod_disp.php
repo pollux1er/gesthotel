@@ -1626,6 +1626,13 @@ while (list(\$var_trad_ita,\$var_trad_ext) = each(\$trad_var)) \$trad_var_vett[\
 unset(\$trad_var);
 ");
 } # fine if (@is_dir("./includes/lang/es"))
+if (@is_dir("./includes/lang/fr")) {
+includi_file("./includes/lang/fr/visualizza_contratto_var.php",$file);
+fwrite($file,"
+while (list(\$var_trad_ita,\$var_trad_ext) = each(\$trad_var)) \$trad_var_vett[\$var_trad_ext] = \$var_trad_ita;
+unset(\$trad_var);
+");
+} # fine if (@is_dir("./includes/lang/fr"))
 if (@is_dir("./includes/lang/en")) {
 includi_file("./includes/lang/en/visualizza_contratto_var.php",$file);
 fwrite($file,"
@@ -1634,7 +1641,7 @@ unset(\$trad_var);
 ");
 } # fine if (@is_dir("./includes/lang/en"))
 global $lingua_mex;
-if ($lingua_mex != "ita" and $lingua_mex != "en" and $lingua_mex != "es") {
+if ($lingua_mex != "ita" and $lingua_mex != "en" and $lingua_mex != "es" and $lingua_mex != "fr") {
 if (@is_dir("./includes/lang/$lingua_mex")) {
 includi_file("./includes/lang/$lingua_mex/visualizza_contratto_var.php",$file);
 fwrite($file,"
@@ -1642,7 +1649,7 @@ while (list(\$var_trad_ita,\$var_trad_ext) = each(\$trad_var)) \$trad_var_vett[\
 unset(\$trad_var);
 ");
 } # fine if (@is_dir("./includes/lang/$lingua_mex"))
-} # fine if ($lingua_mex != "ita" and $lingua_mex != "en" and $lingua_mex != "es")
+} # fine if ($lingua_mex != "ita" and $lingua_mex != "en" and $lingua_mex != "es" and $lingua_mex != "fr")
 fwrite($file,"
 if (!@is_array(\$trad_var_vett)) \$trad_var_vett['new_line'] = 'avanzamento_riga';
 } # fine function crea_trad_var_vett

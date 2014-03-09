@@ -26,14 +26,14 @@ function mext_cal ($messaggio,$pag,$lingua="") {
 if ($lingua) $lingua_mex = $lingua;
 else global $lingua_mex;
 
-if ($lingua_mex != "en" and $lingua_mex != "ita" and $lingua_mex != "es") {
+if ($lingua_mex != "en" and $lingua_mex != "ita" and $lingua_mex != "es" and $lingua_mex != "fr") {
 if (@is_file("./includes/lang/$lingua_mex/modt_cal.php")) include("./includes/lang/$lingua_mex/modt_cal.php");
 } # fine if ($lingua_mex != "en" and...
 
 if ($tr != 1) {
 
 # messaggi in inglese di default
-if ($lingua_mex != "es" and $lingua_mex != "ita") {
+if ($lingua_mex != "es" and $lingua_mex != "ita" and $lingua_mex != "fr") {
 switch ($messaggio) {
 case "Pagina del calendario della disponibilità":	$messaggio = "Page of the availability calendar"; $tr = 1; break;
 case "Mostra le date":  		$messaggio = "Show dates"; $tr = 1; break;

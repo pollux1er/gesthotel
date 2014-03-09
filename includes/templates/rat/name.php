@@ -27,10 +27,12 @@ $template_name_show = "";
 $template_name_show['en'] = "Rates table page";
 $template_name_show['ita'] = "Pagina tabella tariffe";
 $template_name_show['es'] = "Página tabla tarifas";
+$template_name_show['fr'] = "Page de table de taux";
 $template_file_name = "";
 $template_file_name['en'] = "rates_table_tpl.php";
 $template_file_name['ita'] = "mdl_tabella_tariffe.php";
 $template_file_name['es'] = "mdl_tabla_tarifas.php";
+$template_file_name['fr'] = "rates_table_tpl.php";
 $template_data_dir = "rat";
 
 
