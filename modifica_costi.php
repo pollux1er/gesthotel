@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "modifica_costi.php";
-$titolo = "HotelDruid: Modifica Costi";
+$titolo = "Hotel Barcelone: Modifica Costi";
 $base_js = 1;
 
 include("./costanti.php");

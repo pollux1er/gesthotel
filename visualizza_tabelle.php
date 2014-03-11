@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "visualizza_tabelle.php";
-$titolo = "HotelDruid: Visualizza Tabelle";
+$titolo = "Hotel Barcelone: Visualizza Tabelle";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

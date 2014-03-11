@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "crea_modelli.php";
-$titolo = "HotelDruid: Crea Pagine Web";
+$titolo = "Hotel Barcelone: Création Page Web";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

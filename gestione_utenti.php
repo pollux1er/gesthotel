@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "gestione_utenti.php";
-$titolo = "HotelDruid: Gestione Utenti";
+$titolo = "Hotel Barcelone: Gestion des utilisateurs";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

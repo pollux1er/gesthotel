@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "prenota.php";
-$titolo = "HotelDruid: Prenota";
+$titolo = "Hotel Barcelone: Prenota";
 
 
 include("./costanti.php");

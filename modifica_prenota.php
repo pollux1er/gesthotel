@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "modifica_prenota.php";
-$titolo = "HotelDruid: Modifica Prenotazioni";
+$titolo = "Hotel Barcelone: Modifica Prenotazioni";
 $base_js = 1;
 
 include("./costanti.php");

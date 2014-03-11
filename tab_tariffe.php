@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "tab_tariffe.php";
-$titolo = "HotelDruid: Tariffe";
+$titolo = "Hotel Barcelone: Tariffe";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

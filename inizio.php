@@ -23,7 +23,7 @@
 
 
 $pag = "inizio.php";
-$titolo = "HotelDruid";
+$titolo = "Hotel Barcelone : Menu principal";
 
 include("./costanti.php");
 include("./includes/funzioni.php");

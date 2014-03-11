@@ -26,7 +26,7 @@ include("./costanti.php");
 include("./includes/funzioni.php");
 if (!defined("C_CREADB_TIPODB")) include("./includes/costanti.php");
 $pag = "creadb.php";
-$titolo = "HotelDruid: Crea Database";
+$titolo = "Hotel Barcelone: Création Base de données";
 
 if (C_CREA_ULTIMO_ACCESSO != "SI" or !@is_file(C_DATI_PATH."/ultimo_accesso")) {
 

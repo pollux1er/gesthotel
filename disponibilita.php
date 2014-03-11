@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "disponibilita.php";
-$titolo = "HotelDruid: Disponibilità";
+$titolo = "Hotel Barcelone : Disponibilité";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

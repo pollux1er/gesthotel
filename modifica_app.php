@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "modifica_app.php";
-$titolo = "HotelDruid: Modifica Appartamenti";
+$titolo = "Hotel Barcelone: Modification Appartement";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

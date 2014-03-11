@@ -22,7 +22,7 @@
 
 
 $pag = "crea_backup.php";
-$titolo = "HotelDruid: Backup";
+$titolo = "Hotel Barcelone: Sauvegarde";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

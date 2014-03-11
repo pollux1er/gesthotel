@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "interconnessioni.php";
-$titolo = "HotelDruid: Interconnessioni";
+$titolo = "Hotel Barcelone: Interconnexion";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

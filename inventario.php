@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "inventario.php";
-$titolo = "HotelDruid: Inventario";
+$titolo = "Hotel Barcelone: Inventaire";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

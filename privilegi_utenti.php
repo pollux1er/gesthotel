@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "privilegi_utenti.php";
-$titolo = "HotelDruid: Privilegi Utenti";
+$titolo = "Hotel Barcelone: Privilège Utilisateur";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

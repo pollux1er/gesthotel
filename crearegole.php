@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "crearegole.php";
-$titolo = "HotelDruid: Crea Regole";
+$titolo = "Hotel Barcelone: Crea Regole";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

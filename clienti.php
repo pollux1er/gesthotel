@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "clienti.php";
-$titolo = "HotelDruid: Clienti";
+$titolo = "Hotel Barcelone: Clients";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

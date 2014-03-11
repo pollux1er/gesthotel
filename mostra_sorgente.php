@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "mostra_sorgente.php";
-$titolo = "HotelDruid: Source Code";
+$titolo = "Hotel Barcelone: Code Source";
 
 include("./costanti.php");
 include("./includes/funzioni.php");

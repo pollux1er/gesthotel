@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "creaprezzi.php";
-$titolo = "HotelDruid: Crea Prezzi";
+$titolo = "Hotel Barcelone: Crea Prezzi";
 $base_js = 1;
 
 include("./costanti.php");

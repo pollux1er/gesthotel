@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "costi.php";
-$titolo = "HotelDruid: Costi Gestione";
+$titolo = "Hotel Barcelone: Costi Gestione";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "personalizza.php";
-$titolo = "HotelDruid: Personalizza";
+$titolo = "Hotel Barcelone: Personaliser";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

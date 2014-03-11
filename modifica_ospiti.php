@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "modifica_ospiti.php";
-$titolo = "HotelDruid: Modifica Ospiti Prenotazione";
+$titolo = "Hotel Barcelone: Modifica Ospiti Prenotazione";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

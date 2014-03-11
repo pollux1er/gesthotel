@@ -1,8 +1,8 @@
 
 div,form { margin:0; padding:0; }
 
-h3,h4,h5 { text-align: center; padding: 0; margin: 0; font-family:"Trebuchet MS", arial, sans-serif; }
-h3 { font-size: x-large; font-weight: bold; }
+h3,h4,h5 { text-align: center; padding: 0; margin: 0; font-family:icon,Georgia, sans-serif; }
+h3 { font-size: xx-large; font-weight: bold; border-spacing : 1px ;margin : auto; }
 h4 { font-size: x-large; font-weight: normal; }
 h5 { font-size: large; font-weight: normal; }
 

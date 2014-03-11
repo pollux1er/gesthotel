@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "modifica_cliente.php";
-$titolo = "HotelDruid: Modifica Cliente";
+$titolo = "Hotel Barcelone: Modification Client";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

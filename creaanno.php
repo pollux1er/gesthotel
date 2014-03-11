@@ -23,7 +23,7 @@
 
 
 $pag = "inizio.php";
-$titolo = "HotelDruid: Crea Anno";
+$titolo = "Hotel Barcelone: Création Année";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

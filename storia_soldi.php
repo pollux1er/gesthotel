@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "storia_soldi.php";
-$titolo = "HotelDruid: Storico Entrate";
+$titolo = "Hotel Barcelone: Storico Entrate";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

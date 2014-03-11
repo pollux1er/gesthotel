@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "tabella3.php";
-$titolo = "HotelDruid: Tabelle Mesi";
+$titolo = "Hotel Barcelone: Tabelle Mesi";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

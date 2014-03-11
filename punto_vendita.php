@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "punto_vendita.php";
-$titolo = "HotelDruid: Punto Vendita";
+$titolo = "Hotel Barcelone: Punto Vendita";
 $base_js = 1;
 
 include("./costanti.php");

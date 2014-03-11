@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "modifica_var_contr.php";
-$titolo = "HotelDruid: Modifica Variabili Documenti";
+$titolo = "Hotel Barcelone: Modifica Variabili Documenti";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

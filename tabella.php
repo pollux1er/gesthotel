@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "tabella.php";
-$titolo = "HotelDruid: Tabella Mese";
+$titolo = "Hotel Barcelone: Tabella Mese";
 $base_js = 1;
 $drag_drop = 1;
 

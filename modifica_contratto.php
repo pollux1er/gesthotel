@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "modifica_contratto.php";
-$titolo = "HotelDruid: Modifica Documento";
+$titolo = "Hotel Barcelone: Modification Document";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");

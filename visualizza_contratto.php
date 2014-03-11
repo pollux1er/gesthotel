@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "visualizza_contratto.php";
-$titolo = "HotelDruid: Documento";
+$titolo = "Hotel Barcelone: Document";
 $extra_head = "";
 
 include("./costanti.php");

@@ -76,7 +76,42 @@ case "var_fr_":  			$messaggio = "var_phr_"; $tr = 1; break;
 
 if ($lingua_mex == "fr") {
 switch ($messaggio) {
+case "Pagina della tabella con le tariffe":	$messaggio = "page de la table de taux"; $tr = 1; break;
+case "Crea la pagina con la tabella delle tariffe":	$messaggio = "créer la page de table de taux"; $tr = 1; break;
+case "Mostra tariffe":  		$messaggio = "exposition évalue"; $tr = 1; break;
+case "Tabella Tariffe":  		$messaggio = "Tableau De Taux"; $tr = 1; break;
+case "Stile tabella tariffe":  		$messaggio = "modèle de table de taux"; $tr = 1; break;
+case "Costi aggiuntivi":  		$messaggio = "surcoûts"; $tr = 1; break;
+case "della tariffa":  			$messaggio = "du taux"; $tr = 1; break;
+case "della tariffa senza persone":	$messaggio = "du taux sans personnes"; $tr = 1; break;
+case "della tariffa di una persona":	$messaggio = "du taux d'une personne"; $tr = 1; break;
+case "del prezzo totale":  		$messaggio = "du prix total"; $tr = 1; break;
+case "della caparra":  			$messaggio = "du dépôt"; $tr = 1; break;
+case "del resto della caparra":  	$messaggio = "du reste de dépôt"; $tr = 1; break;
+case "alla settimana":			$messaggio = "par semaine"; $tr = 1; break;
+case "al giorno":			$messaggio = "par jour"; $tr = 1; break;
+case "a persona":  			$messaggio = "par personne"; $tr = 1; break;
+case "obbligatorio con":  		$messaggio = "obligatoire avec"; $tr = 1; break;
+case "tutte le tariffe":  		$messaggio = "tous les taux"; $tr = 1; break;
+case "*p":  				$messaggio = "*p"; $tr = 1; break;
+case "":  				$messaggio = ""; $tr = 1; break;
+case "":  				$messaggio = ""; $tr = 1; break;
 
+case "var_stile_tabella_tariffe":  	$messaggio = "var_page_table_taux"; $tr = 1; break;
+case "var_fr_Costi_aggiuntivi":  	$messaggio = "var_eu_surcoûts"; $tr = 1; break;
+case "var_fr_della_tariffa":  		$messaggio = "var_eu_du_taux"; $tr = 1; break;
+case "var_fr_della_tariffa_senza_persone":	$messaggio = "var_eu_du_taux_sans_personne"; $tr = 1; break;
+case "var_fr_della_tariffa_di_una_persona":	$messaggio = "var_eu_du_taux_une_personne"; $tr = 1; break;
+case "var_fr_del_prezzo_totale":  	$messaggio = "var_eu_prix_total"; $tr = 1; break;
+case "var_fr_della_caparra":  		$messaggio = "var_eu_du_depot"; $tr = 1; break;
+case "var_fr_del_resto_della_caparra":	$messaggio = "var_eu_du_reste_depot"; $tr = 1; break;
+case "var_fr_alla_settimana":  		$messaggio = "var_eu_par_semaine"; $tr = 1; break;
+case "var_fr_a_persona":  		$messaggio = "var_eu_par_personne"; $tr = 1; break;
+case "var_fr_obbligatorio_con":  	$messaggio = "var_eu_avec_obligation"; $tr = 1; break;
+case "var_fr_tutte_le_tariffe":  	$messaggio = "var_eu_tous_taux"; $tr = 1; break;
+case "var_fr_per_p":  			$messaggio = "var_eu_par_p"; $tr = 1; break;
+case "var_fr_":  			$messaggio = "var_eu_"; $tr = 1; break;
+case "var_fr_":  			$messaggio = "var_eu_"; $tr = 1; break;
 } # fine switch ($messaggio)
 } # fine if ($lingua_mex == "fr")
 

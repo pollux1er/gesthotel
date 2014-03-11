@@ -83,6 +83,32 @@ case "var_fr_":  			$messaggio = "var_phr_"; $tr = 1; break;
 } # fine switch ($messaggio)
 } # fine if ($lingua_mex == "es")
 
+if ($lingua_mex == "fr") {
+switch ($messaggio) {
+case "Pagina del calendario della disponibilità":	$messaggio = "page du calendrier de disponibilité"; $tr = 1; break;
+case "Mostra le date":  		$messaggio = "exposition date"; $tr = 1; break;
+case "Stile tabella":  			$messaggio = "modèle de Tableau"; $tr = 1; break;
+case "-->":  				$messaggio = "-->"; $tr = 1; break;
+case "<--":  				$messaggio = "<--"; $tr = 1; break;
+case "Prima data selezionaza":  	$messaggio = "première date choisie"; $tr = 1; break;
+case "data attuale":  			$messaggio = "date du jour"; $tr = 1; break;
+case "data fissa":  			$messaggio = "a fixé la date"; $tr = 1; break;
+case "Numero di settimane della tabella":	$messaggio = "nombre de semaines de table"; $tr = 1; break;
+case "Numero di giorni della tabella":	$messaggio = "nombre de jours de table"; $tr = 1; break;
+case "Crea la pagina con il calendario della disponibilità":	$messaggio = "créer la page avec le calendrier de disponibilité"; $tr = 1; break;
+case "è stato selezionato di raggruppare con le regole 2, ma non ne è stata inserita nessuna, quindi la tabella non verrà mostrata":	$messaggio = "tu as choisi grouper avec les règles 2, mais aucun n'a été inséré, ainsi la table ne sera pas montrée"; $tr = 1; break;
+case "":  				$messaggio = ""; $tr = 1; break;
+case "":  				$messaggio = ""; $tr = 1; break;
+
+case "var_stile_tabella_cal":  		$messaggio = "var_style_table_cal"; $tr = 1; break;
+case "var_data_preselezionata":  	$messaggio = "var_date_defaut"; $tr = 1; break;
+case "var_numero_giorni":  		$messaggio = "var_nombre_jour"; $tr = 1; break;
+case "var_fr_":  			$messaggio = "var_eu_"; $tr = 1; break;
+case "var_fr_":  			$messaggio = "var_phr_"; $tr = 1; break;
+case "var_fr_":  			$messaggio = "var_fr_"; $tr = 1; break;
+}
+}
+
 if ($tr != 1) {
 if ($lingua) $messaggio = mex2($messaggio,$pag,$lingua);
 else $messaggio = mex($messaggio,$pag);
