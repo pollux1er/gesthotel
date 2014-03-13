@@ -3,8 +3,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-<title>HotelDruid: Aggiorna Database</title>
-<link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
+<title>Hotel Bracelone: Aggiorna Database</title>
+<link rel="shortcut icon" type="image/x-icon" href="./img/bavicon.ico">
 <link rel="stylesheet" type="text/css" href="./base.css?v=new">
 </head>
 <body style="background-color: #ffffff;">

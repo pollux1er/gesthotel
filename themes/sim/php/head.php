@@ -50,7 +50,7 @@ echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"
 <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" >
 <title> $titolo </title>";
 if ($pag == "visualizza_contratto.php" and $extra_head) echo $extra_head;
-if (C_NASCONDI_MARCA != "SI") echo "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"./img/favicon.ico\">
+if (C_NASCONDI_MARCA != "SI") echo "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"./img/bavicon.ico\">
 ";
 echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"./base.css$vers_hinc\" media=\"all\">
 <link rel=\"stylesheet\" type=\"text/css\" href=\"./themes/$tema_corr/inc/stylesheet.css$vers_hinc\" media=\"all\">
@@ -208,9 +208,40 @@ if ($priv_mod_prenotazioni != "n" and $priv_mod_costi_agg == "s") echo "<li><a h
 echo "</ul>";
 } # fine if ($priv_ins_spese == "s" or...
 echo "</li></ul></div></div></td><td>";
-if ($priv_ins_nuove_prenota == "s") echo "<a class=\"nav\" href=\"./prenota.php?$sessione_anno_var\">&nbsp;<b>".mex("PRENOTAZIONE","head.php")."</b>&nbsp;</a></td><td>";
-if ($inserimento_nuovi_clienti != "NO" or ($modifica_clienti != "NO" and $vedi_clienti != "NO")) echo "<a class=\"nav\" href=\"./clienti.php?$sessione_anno_var\">&nbsp;<b>".mex("CLIENTE","head.php")."</b>&nbsp;</a></td><td>";
+if ($inserimento_nuovi_clienti != "NO" or ($modifica_clienti != "NO" and $vedi_clienti != "NO")) {
+echo "</td><td><div class=\"drop\"><div class=\"xldrop\"><ul onmouseover=\"focus_elem('clisearch')\" onmouseout=\"blur_elem('clisearch')\">
+<li><a class=\"nonav\">&nbsp;<b>".mex("CLIENTI","head.php").":</b>&nbsp;</a><ul>
+<li><a href=\"./clienti.php?$sessione_anno_var\">&nbsp;<b>".mex("NOUVEAU","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=clienti\">&nbsp;<b>".mex("TOUS","head.php")."</b>&nbsp;</a></li>
+<li><form accept-charset=\"utf-8\" method=\"post\" action=\"visualizza_tabelle.php\"><div class=\"lifdrop\">
+<input type=\"hidden\" name=\"anno\" value=\"$anno\">
+<input type=\"hidden\" name=\"id_sessione\" value=\"$id_sessione\">
+<input type=\"hidden\" name=\"tipo_tabella\" value=\"clienti\">
+<b>&nbsp;".mex("NOM","head.php")."</b> <input id=\"clisearch\" type=\"text\" name=\"cognome_cerca\" class=\"smallsel85\" size=\"5\">
+<input class=\"sbutton\" type=\"submit\" value=\"".mex("CERCA","head.php")."\" style=\"font-size: 80%;\">
+&nbsp;</div></form></li></ul></li></ul></div></div></td><td>";
+} # fine $inserimento_nuovi_clienti != "NO" )
 } # fine if ($priv_ins_nuove_prenota == "s" or...
+if ($priv_vedi_tab_prenotazioni != "n") {
+echo "</td><td><div class=\"drop\"><div class=\"xldrop\"><ul onmouseover=\"focus_elem('ressearch')\" onmouseout=\"blur_elem('ressearch')\">
+<li><a class=\"nonav\">&nbsp;<b>".mex("PRENOTAZIONE","head.php").":</b>&nbsp;</a><ul>
+<li><a href=\"./prenota.php?$sessione_anno_var\">&nbsp;<b>".mex("NOUVEAU","head.php")."</b>&nbsp;</a>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=tutte\">&nbsp;<b>".mex("TOUTES","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=correnti\">&nbsp;<b>".mex("CORRENTI","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=future\">&nbsp;<b>".mex("FUTURE","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=correnti&amp;opz_cerc_pren=arr\">&nbsp;<b>".mex("ARRIVI","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=correnti&amp;opz_cerc_pren=part\">&nbsp;<b>".mex("PARTENZE","head.php")."</b>&nbsp;</a></li>
+<li><form accept-charset=\"utf-8\" method=\"post\" action=\"visualizza_tabelle.php\"><div class=\"lifdrop\">
+<input type=\"hidden\" name=\"anno\" value=\"$anno\">
+<input type=\"hidden\" name=\"id_sessione\" value=\"$id_sessione\">
+<input type=\"hidden\" name=\"tipo_tabella\" value=\"prenotazioni\">
+<input type=\"hidden\" name=\"subtotale_selezionate\" value=\"1\">
+<input type=\"hidden\" name=\"num_cambia_pren\" value=\"1\">
+<input type=\"hidden\" name=\"cerca_id_passati\" value=\"1\">
+<b>&nbsp;".mex("NUMERO","head.php")."</b> <input id=\"ressearch\" type=\"text\" name=\"cambia1\" class=\"smallsel85\" size=\"5\">
+<input class=\"sbutton\" type=\"submit\" value=\"".mex("VAI","head.php")."\" style=\"font-size: 80%;\">
+&nbsp;</div></form></li></ul></li></ul></div></div></td><td>";
+} # fine if ($priv_vedi_tab_prenotazioni != "n")
 if ($priv_vedi_tab_mesi != "n" or $priv_vedi_tab_prenotazioni != "n" or $vedi_clienti != "NO" or $priv_vedi_tab_costi != "n" or $priv_vedi_tab_periodi != "n" or $priv_vedi_tab_appartamenti != "n" or $priv_vedi_tab_regole != "n" or $priv_vedi_messaggi == "s") {
 if ($priv_vedi_messaggi == "s" and $numconnessione) {
 $tablemessaggi = $PHPR_TAB_PRE."messaggi";
@@ -244,37 +275,6 @@ echo "</td><td><div class=\"drop\"><ul>
 for ($num1 = $mese_attuale + 1 ; $num1 < $mese_attuale + 12 ; $num1++) echo "<li><a href=\"./tabella.php?$sessione_anno_var&amp;mese=".$num1."\">&nbsp;<b>".mex(nome_mese_menu($num1),"head.php")."</b>&nbsp;</a></li>";
 echo "</ul></li></ul></div></td><td>";
 } # fine if ($priv_vedi_tab_mesi != "n")
-if ($priv_vedi_tab_prenotazioni != "n") {
-echo "</td><td><div class=\"drop\"><div class=\"xldrop\"><ul onmouseover=\"focus_elem('ressearch')\" onmouseout=\"blur_elem('ressearch')\">
-<li><a class=\"nav\" href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni\">&nbsp;<b>".mex("PRENOTAZIONI","head.php")."</b>&nbsp;</a><ul>
-<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=tutte\">&nbsp;<b>".mex("TUTTE","head.php")."</b>&nbsp;</a></li>
-<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=correnti\">&nbsp;<b>".mex("CORRENTI","head.php")."</b>&nbsp;</a></li>
-<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=future\">&nbsp;<b>".mex("FUTURE","head.php")."</b>&nbsp;</a></li>
-<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=correnti&amp;opz_cerc_pren=arr\">&nbsp;<b>".mex("ARRIVI","head.php")."</b>&nbsp;</a></li>
-<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=correnti&amp;opz_cerc_pren=part\">&nbsp;<b>".mex("PARTENZE","head.php")."</b>&nbsp;</a></li>
-<li><form accept-charset=\"utf-8\" method=\"post\" action=\"visualizza_tabelle.php\"><div class=\"lifdrop\">
-<input type=\"hidden\" name=\"anno\" value=\"$anno\">
-<input type=\"hidden\" name=\"id_sessione\" value=\"$id_sessione\">
-<input type=\"hidden\" name=\"tipo_tabella\" value=\"prenotazioni\">
-<input type=\"hidden\" name=\"subtotale_selezionate\" value=\"1\">
-<input type=\"hidden\" name=\"num_cambia_pren\" value=\"1\">
-<input type=\"hidden\" name=\"cerca_id_passati\" value=\"1\">
-<b>&nbsp;".mex("NUMERO","head.php")."</b> <input id=\"ressearch\" type=\"text\" name=\"cambia1\" class=\"smallsel85\" size=\"5\">
-<input class=\"sbutton\" type=\"submit\" value=\"".mex("VAI","head.php")."\" style=\"font-size: 80%;\">
-&nbsp;</div></form></li></ul></li></ul></div></div></td><td>";
-} # fine if ($priv_vedi_tab_prenotazioni != "n")
-if ($vedi_clienti != "NO") {
-echo "</td><td><div class=\"drop\"><ul onmouseover=\"focus_elem('clisearch')\" onmouseout=\"blur_elem('clisearch')\">
-<li><a class=\"nav\" href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=clienti\">&nbsp;<b>".mex("CLIENTI","head.php")."</b>&nbsp;</a><ul>
-<li><form accept-charset=\"utf-8\" method=\"post\" action=\"visualizza_tabelle.php\"><div class=\"fdrop\">
-<input type=\"hidden\" name=\"anno\" value=\"$anno\">
-<input type=\"hidden\" name=\"id_sessione\" value=\"$id_sessione\">
-<input type=\"hidden\" name=\"tipo_tabella\" value=\"clienti\">
-<input id=\"clisearch\" type=\"text\" name=\"cognome_cerca\" size=\"8\">
-<input class=\"sbutton\" type=\"submit\" value=\"".mex("CERCA","head.php")."\">
-&nbsp;</div></form></li>
-</ul></li></ul></div></td><td>";
-} # fine if ($vedi_clienti != "NO")
 if ($priv_vedi_tab_periodi != "n") {
 echo "<div class=\"drop\"><div class=\"xldrop\"><ul>
 <li><a class=\"nav\" href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=periodi\">&nbsp;<b>".mex("TARIFFE","head.php")."</b>&nbsp;</a><ul>

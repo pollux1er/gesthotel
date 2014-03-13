@@ -2,12 +2,12 @@
 
 switch ($messaggio) {
 
-case "Procedere con la prenotazione":	$messaggio = "Proceed booking"; $tr = 1; break;
-case "altro":  				$messaggio = "other"; $tr = 1; break;
-case "Indirizzo":  			$messaggio = "Address"; $tr = 1; break;
+case "Procedere con la prenotazione":	$messaggio = "procède à la réservation"; $tr = 1; break;
+case "altro":  				$messaggio = "autre"; $tr = 1; break;
+case "Indirizzo":  			$messaggio = "Adresse"; $tr = 1; break;
 case "Prenota":  			$messaggio = "Book"; $tr = 1; break;
-case "comportati come se non vi fosse più disponibilità con questa frase alternativa":	$messaggio = "Show that there is no more availability with this alternative phrase"; $tr = 1; break;
-case "Nota: questi dati verranno utilizzati solo in relazione<br> al servizio offerto e comunicati solo a PayPal per il<br> completamento della prenotazione":	$messaggio = "Note: this data will be used only in relation to<br> this service and passed only to PayPal for the<br> completion of the reservation"; $tr = 1; break;
+case "comportati come se non vi fosse più disponibilità con questa frase alternativa":	$messaggio = "exposition qu'il n'y a plus de disponibilité avec cette expression alternative"; $tr = 1; break;
+case "Nota: questi dati verranno utilizzati solo in relazione<br> al servizio offerto e comunicati solo a PayPal per il<br> completamento della prenotazione":	$messaggio = "note : ces données seront employées seulement dans <br>ce service et passées seulement à PayPal pour<br> l'accomplissement de la réservation"; $tr = 1; break;
 case "Un codice di verifica è stato inviato a":	$messaggio = "A verification code has been sent to"; $tr = 1; break;
 case "Controlla la posta e inserisci il codice in questa pagina per effettuare la prenotazione":	$messaggio = "Check your mail and insert the code in this page to make the reservation"; $tr = 1; break;
 case "Codice di verifica":  		$messaggio = "Verification code"; $tr = 1; break;
