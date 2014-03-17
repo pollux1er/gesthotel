@@ -50,7 +50,7 @@ echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"
 <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" >
 <title> $titolo </title>";
 if ($pag == "visualizza_contratto.php" and $extra_head) echo $extra_head;
-if (C_NASCONDI_MARCA != "SI") echo "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"./img/faricon.ico\">
+if (C_NASCONDI_MARCA != "SI") echo "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"./img/bavicon.ico\">
 ";
 echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"./base.css$vers_hinc\" media=\"all\">
 <link rel=\"stylesheet\" type=\"text/css\" href=\"./themes/$tema_corr/inc/stylesheet.css$vers_hinc\" media=\"all\">
@@ -261,7 +261,6 @@ echo "<ul>";
 if ($priv_vedi_messaggi == "s") echo "<li><a href=\"./messaggi.php?$sessione_anno_var\">&nbsp;$gt<b>".mex("MESSAGGI","head.php")."</b>$lt&nbsp;</a></li>";
 if ($priv_vedi_tab_costi != "n") echo "<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=costi\">&nbsp;<b>".mex("CASSE","head.php")."</b>&nbsp;</a></li>";
 if ($priv_vedi_tab_regole != "n") echo "<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=regole\">&nbsp;<b>".mex("REGOLE","head.php")."</b>&nbsp;</a></li>";
-if ($priv_vedi_tab_inventario != "n") echo "<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=inventario\">&nbsp;<b>".mex("INVENTARIO","head.php")."</b>&nbsp;</a></li>";
 if ($priv_vedi_tab_doc != "n") echo "<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=documenti\">&nbsp;<b>".mex("DOCUMENTI","head.php")."</b>&nbsp;</a></li>";
 if ($priv_vedi_tab_stat != "n") echo "<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=statistiche\">&nbsp;<b>".mex("STATISTICHE","head.php")."</b>&nbsp;</a></li>";
 if ($priv_vedi_tab_costi != "n") echo "<li><a href=\"./storia_soldi.php?$sessione_anno_var\">&nbsp;<b>".mex("ENTRATE&nbsp;PREN.","head.php")."</b>&nbsp;</a></li>";
@@ -284,8 +283,15 @@ echo "<div class=\"drop\"><div class=\"xldrop\"><ul>
 } # fine if ($priv_vedi_tab_periodi != "n")
 if ($priv_vedi_tab_appartamenti != "n") {
 $fr_APPARTAMENTI = mex("APPARTAMENTI","unit.php");
-if (strlen($fr_APPARTAMENTI) > 11) $fr_APPARTAMENTI = substr($fr_APPARTAMENTI,0,6).".";
-echo "<a class=\"nav\" href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=appartamenti\">&nbsp;<b>$fr_APPARTAMENTI</b>&nbsp;</a></td><td>";
+if (strlen($fr_APPARTAMENTI) > 11) 
+$fr_APPARTAMENTI = substr($fr_APPARTAMENTI,0,6).".";
+if ($priv_vedi_tab_inventario != "n") {
+echo "<div class=\"drop\"><div class=\"xldrop\"><ul>
+<li><a class=\"nonav\">&nbsp;<b>".mex("INVENTARIO","head.php")."</b>&nbsp;</a><ul>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=inventario\">&nbsp;<b>".mex("TUTTE","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=appartamenti\">&nbsp;<b>$fr_APPARTAMENTI</b>&nbsp;</a></li>
+</ul></li></ul></div></div></td><td>";
+} # fine if ($priv_vedi_tab_inventario != "n")
 } # fine if ($priv_vedi_tab_appartamenti != "n")
 } # fine if ($priv_vedi_tab_mesi != "n" or $priv_vedi_tab_prenotazioni != "n" or...
 if ($modifica_pers != "NO" or ($priv_crea_backup == "s" and $installazione_subordinata != "SI")) {
