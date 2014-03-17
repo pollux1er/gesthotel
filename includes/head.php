@@ -35,14 +35,17 @@ $t1dropin = "#05e105";
 $t1dropout = "#297929";
 
 
-if (defined('C_FILE_TITOLO_PERS') and C_FILE_TITOLO_PERS != "" and @is_file(C_FILE_TITOLO_PERS)) $titolo = trim(substr(implode("",file(C_FILE_TITOLO_PERS)),0,40))." - $titolo";
-echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"
+if (defined('C_FILE_TITOLO_PERS') and C_FILE_TITOLO_PERS != "" and @is_file(C_FILE_TITOLO_PERS)) 
+	$titolo = trim(substr(implode("",file(C_FILE_TITOLO_PERS)),0,40))." - $titolo";
+
+	echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"
         \"http://www.w3.org/TR/html4/strict.dtd\">
 <html>
 <head>
 <meta http-equiv=\"Content-Type\" content=\"text/html;charset=utf-8\" >
 <title> $titolo </title>";
-if ($pag == "visualizza_contratto.php" and $extra_head) echo $extra_head;
+if ($pag == "visualizza_contratto.php" and $extra_head) 
+	echo $extra_head;
 echo "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"./img/favicon.ico\">
 <link rel=\"stylesheet\" type=\"text/css\" href=\"./base.css$vers_hinc\">
 ";

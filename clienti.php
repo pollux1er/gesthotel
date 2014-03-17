@@ -1792,7 +1792,7 @@ echo "<input type=\"hidden\" name=\"inserire_dato_nome".$idcognome[$num]."\" val
 
 } # fine else if ($nuovaprenotazione)
 
-echo "</div><hr style=\"width: 95%\">";
+echo "</div><hr style=\"\">";
 } # fine for $num
 echo "<div style=\"text-align: center;\">";
 
@@ -1815,7 +1815,7 @@ echo "<input type=\"hidden\" name=\"numpersone$n_t\" value=\"".${"numpersone".$n
 echo "<div style=\"text-align: center;\"><br>
 <input class=\"sbutton\" type=\"submit\" id=\"inse\" name=\"datiprenota\" value=\"".mex("Inserisci i dati di un nuovo cliente",$pag)."\">
 </div></div></form><br>
-<hr style=\"width: 95%\">";
+<hr style=\"\">";
 } # fine if ($inserimento_nuovi_clienti == "SI")
 
 echo "<form accept-charset=\"utf-8\" method=\"post\" action=\"$origine\"><div>
@@ -1867,7 +1867,7 @@ echo "<input type=\"hidden\" name=\"cognome\" value=\"$cognome\">
 <input type=\"hidden\" name=\"email\" value=\"$email\">";
 if ($inserimento_nuovi_clienti == "SI") {
 echo "<input class=\"sbutton\" type=\"submit\" name=\"inserire\" value=\"".mex("Inserisci un nuovo cliente",$pag)."\">
-<br><hr style=\"width: 95%\">
+<br><hr style=\"\">
 <input class=\"sbutton\" type=\"submit\" name=\"torna\" value=\"".mex("Torna indietro",$pag)."\">
 </div></div></form>";
 } # fine if ($inserimento_nuovi_clienti == "SI")
@@ -2036,7 +2036,7 @@ echo "<form accept-charset=\"utf-8\" method=\"post\" action=\"$origine\"><div cl
 <input type=\"hidden\" name=\"anno\" value=\"$anno\">
 <input type=\"hidden\" name=\"id_sessione\" value=\"$id_sessione\">
 <input type=\"hidden\" name=\"origine\" value=\"$origine\">
-<hr style=\"width: 95%\">";
+<hr style=\"\">";
 $titoli_cliente = esegui_query("select valpersonalizza from $tablepersonalizza where idpersonalizza = 'titoli_cliente' and idutente = '$id_utente'");
 if (numlin_query($titoli_cliente) == 1) $titoli_cliente = risul_query($titoli_cliente,0,"valpersonalizza");
 else $titoli_cliente = "";
@@ -2064,13 +2064,13 @@ $prefisso_clienti = $prefisso_clienti[1];
 if ($attiva_prefisso_clienti == "p") echo $prefisso_clienti;
 echo "<input type=\"text\" id=\"cognome\" name=\"cognome\" value=\"$cognome\">";
 if ($attiva_prefisso_clienti == "s") echo $prefisso_clienti;
-echo ",".mex("nome",$pag).": <input type=\"text\" name=\"nome\" value=\"$nome\">;
- ".mex("soprannome",$pag).": <input type=\"text\" name=\"soprannome\" value=\"$soprannome\">;<br>
+echo "<br />".mex("nome",$pag).": <input type=\"text\" name=\"nome\" value=\"$nome\"><br />
+ ".mex("soprannome",$pag).": <input type=\"text\" name=\"soprannome\" value=\"$soprannome\"><br />
 ".mex("sesso",$pag).": <select name=\"sesso\">
 <option value=\"\" selected>-</option>
 <option value=\"m\"$sel_m>m</option>
 <option value=\"f\"$sel_f>f</option>
-</select>;
+</select><br />
  ".mex("cittadinanza",$pag).": ".mostra_lista_relutenti("nazionalita",$nazionalita,$id_utente,"nome_nazione","idnazioni","idnazione",$tablenazioni,$tablerelutenti)."<input type=\"button\" class=\"cpbutton\" onclick=\"cp_val('nazionalita','nazione','')\" value=\"#\">;
  ".mex("lingua",$pag).": <select name=\"lingua_cli\">";
 if ($lingua_cli == "ita") $sel = " selected";
@@ -2113,7 +2113,7 @@ else echo "<input type=\"hidden\" name=\"prenota_cli_osp\" value=\"p1_1\">";
 } # fine if ($datiprenota)
 
 mostra_funzjs_dati_rel("","",$id_sessione,$anno);
-echo "<hr style=\"width: 95%\">
+echo "<hr style=\"\">
 ".mex("Data di nascita",$pag)." ";
 $sel_gnascita = "<select name=\"giornonascita\">
 <option value=\"\" selected>--</option>";

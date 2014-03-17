@@ -44,7 +44,7 @@ select { background-color: #ffffff; }
 #flogin { background: url("./img/logo.png") no-repeat right top; padding: 5px; line-height: 1.6; }
 
 .bspacer { height: 6px; }
-.linhbox { line-height: 1.5; }
+.linhbox { line-height: 2; margin : 0 88px; }
 .wsnowrap { white-space: nowrap; }
 
 .colred { color: red; }
