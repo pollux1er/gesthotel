@@ -50,7 +50,7 @@ echo "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"
 <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" >
 <title> $titolo </title>";
 if ($pag == "visualizza_contratto.php" and $extra_head) echo $extra_head;
-if (C_NASCONDI_MARCA != "SI") echo "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"./img/bavicon.ico\">
+if (C_NASCONDI_MARCA != "SI") echo "<link rel=\"shortcut icon\" type=\"image/x-icon\" href=\"./img/faricon.ico\">
 ";
 echo "<link rel=\"stylesheet\" type=\"text/css\" href=\"./base.css$vers_hinc\" media=\"all\">
 <link rel=\"stylesheet\" type=\"text/css\" href=\"./themes/$tema_corr/inc/stylesheet.css$vers_hinc\" media=\"all\">
