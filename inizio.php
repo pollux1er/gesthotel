@@ -696,8 +696,7 @@ echo "<form accept-charset=\"utf-8\" method=\"post\" action=\"inizio.php\"><div>
 if (!$numconnessione and C_MOSTRA_COPYRIGHT != "NO") {
 echo "</td></tr>
 <tr><td style=\"background-color: #ffffff; height: 57px; color: #000000; font-size: 11px; text-align: center; vertical-align: bottom;\">
-Website <a style=\"color: #000000;\" href=\"./mostra_sorgente.php\">engine code</a> is copyright © by DigitalDruid.Net.
-<a style=\"color: #000000;\" href=\"http://www.hoteldruid.com\">HotelDruid</a> is a free software released under the GNU/AGPL.
+
 </td></tr></table>";
 } # fine if (!$numconnessione and C_MOSTRA_COPYRIGHT != "NO")
 
