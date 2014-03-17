@@ -2,7 +2,7 @@
 
 switch ($messaggio) {
 
-case "Configura e personalizza HotelDruid":	$messaggio = "Configure and customize HotelDruid"; break;
+case "Configura e personalizza HotelDruid":	$messaggio = "Configurer et personnaliser HotelBarcelone"; break;
 case "Scegli la lingua":  			$messaggio = "Choose the language"; break;
 case "cambia la lingua":  			$messaggio = "change language"; break;
 case "Tabella con tutte le prenotazioni":  	$messaggio = "Table with all the reservations"; break;

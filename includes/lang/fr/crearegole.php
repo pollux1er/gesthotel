@@ -2,7 +2,7 @@
 
 switch ($messaggio) {
 
-case "Inserisci le regole di assegnazione per le prenotazioni dell'anno":	$messaggio = "inserer que la tâche règle pour des réservations d'année"; break;
+case "Inserisci le regole di assegnazione per le prenotazioni dell'anno":	$messaggio = "Inserer les règles pour des réservations d'année"; break;
 case "Regola di assegnazione":  		$messaggio = "règle de tâche"; break;
 case "nel periodo dal":  			$messaggio = "dans la periode de"; break;
 case "al":  					$messaggio = "à"; break;
