@@ -212,7 +212,7 @@ if ($inserimento_nuovi_clienti != "NO" or ($modifica_clienti != "NO" and $vedi_c
 echo "</td><td><div class=\"drop\"><div class=\"xldrop\"><ul onmouseover=\"focus_elem('clisearch')\" onmouseout=\"blur_elem('clisearch')\">
 <li><a class=\"nonav\">&nbsp;<b>".mex("CLIENTI","head.php").":</b>&nbsp;</a><ul>
 <li><a href=\"./clienti.php?$sessione_anno_var\">&nbsp;<b>".mex("NOUVEAU","head.php")."</b>&nbsp;</a></li>
-<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=clienti\">&nbsp;<b>".mex("TOUST","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=clienti\">&nbsp;<b>".mex("TOUS","head.php")."</b>&nbsp;</a></li>
 <li><form accept-charset=\"utf-8\" method=\"post\" action=\"visualizza_tabelle.php\"><div class=\"lifdrop\">
 <input type=\"hidden\" name=\"anno\" value=\"$anno\">
 <input type=\"hidden\" name=\"id_sessione\" value=\"$id_sessione\">
