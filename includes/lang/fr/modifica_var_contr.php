@@ -2,8 +2,8 @@
 
 switch ($messaggio) {
 
-case "Torna indietro":  			$messaggio = "Go back"; break;
-case "Variabili personalizzate dei documenti":  $messaggio = "Documents custom variables"; break;
+case "Torna indietro":  			$messaggio = "Retour"; break;
+case "Variabili personalizzate dei documenti":  $messaggio = "Variables faites sur commande de documents"; break;
 case "Variabili personalizzate":  		$messaggio = "Custom variables"; break;
 case "Elimina":  				$messaggio = "Delete"; break;
 case "Aggiungi":  				$messaggio = "Add"; break;

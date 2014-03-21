@@ -5,7 +5,7 @@ switch ($messaggio) {
 case "Le date sono sbagliate":  		$messaggio = "les dates sont erronées"; break;
 case "Si deve inserire il tipo di tariffa":  	$messaggio = "tu dois insérer le type de taux"; break;
 case "tariffa":  				$messaggio = "taux"; break;
-case "Non è stato ancora inserito il prezzo della":	$messaggio = "tu dois insertion immobile le prix de"; break;
+case "Non è stato ancora inserito il prezzo della":	$messaggio = "tu dois encore inserer le prix de"; break;
 case "per la settimana dal":  			$messaggio = "pour la semaine de"; break;
 case "per il giorno dal":  			$messaggio = "pour le jour de"; break;
 case "al":  					$messaggio = "à"; break;

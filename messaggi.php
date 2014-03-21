@@ -21,7 +21,7 @@
 ##################################################################################
 
 $pag = "messaggi.php";
-$titolo = "Hotel Barcelone: Messaggi";
+$titolo = "Hotel Barcelone: Message";
 
 include("./costanti.php");
 include(C_DATI_PATH."/dati_connessione.php");
