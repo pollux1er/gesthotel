@@ -211,8 +211,8 @@ echo "</li></ul></div></div></td><td>";
 if ($inserimento_nuovi_clienti != "NO" or ($modifica_clienti != "NO" and $vedi_clienti != "NO")) {
 echo "</td><td><div class=\"drop\"><div class=\"xldrop\"><ul onmouseover=\"focus_elem('clisearch')\" onmouseout=\"blur_elem('clisearch')\">
 <li><a class=\"nonav\">&nbsp;<b>".mex("CLIENTI","head.php").":</b>&nbsp;</a><ul>
-<li><a href=\"./clienti.php?$sessione_anno_var\">&nbsp;<b>".mex("NOUVEAU","head.php")."</b>&nbsp;</a></li>
-<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=clienti\">&nbsp;<b>".mex("TOUS","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./clienti.php?$sessione_anno_var\">&nbsp;<b>".mex("NUOVO","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=clienti\">&nbsp;<b>".mex("TUTTE","head.php")."</b>&nbsp;</a></li>
 <li><form accept-charset=\"utf-8\" method=\"post\" action=\"visualizza_tabelle.php\"><div class=\"lifdrop\">
 <input type=\"hidden\" name=\"anno\" value=\"$anno\">
 <input type=\"hidden\" name=\"id_sessione\" value=\"$id_sessione\">
@@ -225,8 +225,8 @@ echo "</td><td><div class=\"drop\"><div class=\"xldrop\"><ul onmouseover=\"focus
 if ($priv_vedi_tab_prenotazioni != "n") {
 echo "</td><td><div class=\"drop\"><div class=\"xldrop\"><ul onmouseover=\"focus_elem('ressearch')\" onmouseout=\"blur_elem('ressearch')\">
 <li><a class=\"nonav\">&nbsp;<b>".mex("PRENOTAZIONE","head.php").":</b>&nbsp;</a><ul>
-<li><a href=\"./prenota.php?$sessione_anno_var\">&nbsp;<b>".mex("NOUVEAU","head.php")."</b>&nbsp;</a>
-<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=tutte\">&nbsp;<b>".mex("TOUTES","head.php")."</b>&nbsp;</a></li>
+<li><a href=\"./prenota.php?$sessione_anno_var\">&nbsp;<b>".mex("NUOVO","head.php")."</b>&nbsp;</a>
+<li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=tutte\">&nbsp;<b>".mex("TUTTI","head.php")."</b>&nbsp;</a></li>
 <li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=correnti\">&nbsp;<b>".mex("CORRENTI","head.php")."</b>&nbsp;</a></li>
 <li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=future\">&nbsp;<b>".mex("FUTURE","head.php")."</b>&nbsp;</a></li>
 <li><a href=\"./visualizza_tabelle.php?$sessione_anno_var&amp;tipo_tabella=prenotazioni&amp;sel_tab_prenota=correnti&amp;opz_cerc_pren=arr\">&nbsp;<b>".mex("ARRIVI","head.php")."</b>&nbsp;</a></li>

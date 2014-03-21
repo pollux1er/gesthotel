@@ -1,4 +1,4 @@
 <?php
-$lingua[1] = "fr";
+$lingua[1] = "en";
 $lingua[2] = "fr";
 ?>
