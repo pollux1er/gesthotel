@@ -3,7 +3,7 @@
 switch ($messaggio) {
 
 case "Inserisci le regole di assegnazione per le prenotazioni dell'anno":	$messaggio = "Inserer les règles pour des réservations d'année"; break;
-case "Regola di assegnazione":  		$messaggio = "règle de tâche"; break;
+case "Regola di assegnazione":  		$messaggio = "règle d'assignation"; break;
 case "nel periodo dal":  			$messaggio = "dans la periode de"; break;
 case "al":  					$messaggio = "à"; break;
 case "motivazione":  				$messaggio = "motivation"; break;
@@ -23,7 +23,7 @@ case "SI":  					$messaggio = "OUI"; break;
 case "Le regole sono state cancellate":  	$messaggio = "les règles ont été supprimées"; break;
 case "Si deve scegliere la tariffa":  		$messaggio = "tu dois choisir le taux"; break;
 case " non esiste":  				$messaggio = " n'existe pas"; break;
-case "La regola di assegnazione":		$messaggio = "la règle de tâche"; break;
+case "La regola di assegnazione":		$messaggio = "la règle d'assignation"; break;
 case "è stata inserita":			$messaggio = "a été inséré"; break;
 case "è stata modificata":			$messaggio = "a été modifié"; break;
 case "Torna indietro":  			$messaggio = "retour"; break;
