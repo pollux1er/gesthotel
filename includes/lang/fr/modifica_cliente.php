@@ -5,7 +5,7 @@ switch ($messaggio) {
 case "Il cognome verrà cambiato da":  		$messaggio = "le nom de famille sera changé de"; break;
 case "a":  					$messaggio = "à"; break;
 case "Il nome verrà cambiato da":  		$messaggio = "le nom sera changé en"; break;
-case "Il sesso verrà cambiato a":  		$messaggio = "le genre sera changé en "; break;
+case "Il sesso verrà cambiato a":  		$messaggio = "le sexe sera changé en "; break;
 case "La data di nascita  verrà cambiata da":  	$messaggio = "la date de naissance sera changée en"; break;
 case "Il telefono verrà cambiato da":  		$messaggio = "le téléphone sera changé en"; break;
 case "La via  verrà cambiata da":  		$messaggio = "la rue sera changée en"; break;
