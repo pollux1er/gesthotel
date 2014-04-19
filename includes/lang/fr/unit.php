@@ -14,8 +14,8 @@
 
 # Translate only the value of variables in single quotes on the right. Special characters are separated 
 # by commas. Genders can be "m" or "f".
-$trad_var['room'] = 'room';
-$trad_var['rooms'] = 'rooms';
+$trad_var['room'] = 'chambre';
+$trad_var['rooms'] = 'chambres';
 $trad_var['room_gender'] = 'm';
 $trad_var['apartment'] = 'apartment';
 $trad_var['apartments'] = 'apartments';

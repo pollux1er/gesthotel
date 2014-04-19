@@ -47,7 +47,7 @@ case "NUMERO":  			$messaggio = "NUMERO"; break;
 case "VAI":  				$messaggio = "ALLER"; break;
 case "COSTI AGGIUNTIVI":  		$messaggio = "SURCOÛTS"; break;
 case "CAPARRE E TASSE":  		$messaggio = "DÉPÔTS ET IMPÔTS"; break;
-case "ROOMS":		 $messaggio = "CHAMBRE"; break;
+case "APPARTAMENTI":		 $messaggio = "CHAMBRE"; break;
 case "":  		$messaggio = ""; break;
 case "":  		$messaggio = ""; break;
 
