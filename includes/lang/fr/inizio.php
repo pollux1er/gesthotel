@@ -2,7 +2,7 @@
 
 switch ($messaggio) {
 
-case "Menù principale dell'anno":             	$messaggio = "Menu prinicipal d'année"; break;
+case "Menù principale dell'anno":             	$messaggio = "Menu prinicipal pour l'année"; break;
 case "Inserisci una nuova prenotazione":      	$messaggio = "Inserer une nouvelle réservation"; break;
 case "prenotazioni del mese di": 		$messaggio = "réservations dans"; break;
 case "visualizza": 				$messaggio = "vue"; break;
