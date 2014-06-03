@@ -42,6 +42,7 @@ select { background-color: #ffffff; }
 .logout a:link, .logout a:visited, .logout a:hover { color: #000000; }
 
 #flogin { background: url("./img/logo.png") no-repeat right top; padding: 5px; line-height: 1.6; }
+#flogin { background: url("./img/logo.png") no-repeat left top; padding: 5px; line-height: 1.6; }
 
 .bspacer { height: 6px; }
 .linhbox { line-height: 2; margin : 0 88px; }

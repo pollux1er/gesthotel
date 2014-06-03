@@ -105,3 +105,4 @@ text-indent: -100em; }
 .calbutton { font-size: 9px; padding: 0 5px 0 5px; }
 
 #mmenu { background: url("../../../img/logo.png") no-repeat right top; }
+#mmenu1 { background: url("../../../img/logo.png") no-repeat left top; }
